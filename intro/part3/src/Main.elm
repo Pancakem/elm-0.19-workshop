@@ -88,17 +88,6 @@ viewTag selectedTagName tagName =
     in
     button
         [ class ("tag-pill " ++ otherClass)
-
-        {- 👉 TODO: Add an `onClick` handler which sends a msg
-                    that our `update` function above will use
-                    to set the currently selected tag to `tagName`.
-
-           💡 HINT: It should look something like this:
-
-                    , onClick { description = … , data = … }
-
-                    👆 Don't forget to add a comma before `onClick`!
-        -}
         , onClick { description = "ClickedTag", data = tagName } 
         ]
         [ text tagName ]
